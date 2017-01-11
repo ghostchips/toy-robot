@@ -28,6 +28,7 @@ class Robot
   end
 
   def move
+    # Check which way the robot is facing to determine movement
     if @facing == 'NORTH' && @x < @north
       @x = @x + 1
       return [@x, @y, @facing]
